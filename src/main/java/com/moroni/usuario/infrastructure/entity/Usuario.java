@@ -1,4 +1,4 @@
-package com.moroni.usuario.infraestructure.entity;
+package com.moroni.usuario.infrastructure.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

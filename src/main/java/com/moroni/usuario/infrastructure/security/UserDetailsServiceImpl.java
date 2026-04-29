@@ -1,8 +1,9 @@
-package com.moroni.usuario.infraestructure.security;
+package com.moroni.usuario.infrastructure.security;
 
 
 
-import com.moroni.usuario.infraestructure.repository.UsuarioRepository;
+import com.moroni.usuario.infrastructure.entity.Usuario;
+import com.moroni.usuario.infrastructure.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
