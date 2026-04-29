@@ -1,7 +1,5 @@
 package com.moroni.usuario.business.dto;
 
-import com.moroni.usuario.infraestructure.entity.Endereco;
-import com.moroni.usuario.infraestructure.entity.Telefone;
 import lombok.*;
 
 import java.util.List;

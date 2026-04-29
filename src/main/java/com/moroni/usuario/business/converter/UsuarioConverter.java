@@ -3,9 +3,9 @@ package com.moroni.usuario.business.converter;
 import com.moroni.usuario.business.dto.EnderecoDTO;
 import com.moroni.usuario.business.dto.TelefoneDTO;
 import com.moroni.usuario.business.dto.UsuarioDTO;
-import com.moroni.usuario.infraestructure.entity.Endereco;
-import com.moroni.usuario.infraestructure.entity.Telefone;
-import com.moroni.usuario.infraestructure.entity.Usuario;
+import com.moroni.usuario.infrastructure.entity.Endereco;
+import com.moroni.usuario.infrastructure.entity.Telefone;
+import com.moroni.usuario.infrastructure.entity.Usuario;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
