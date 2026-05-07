@@ -4,7 +4,6 @@ import com.moroni.usuario.business.UsuarioService;
 import com.moroni.usuario.business.dto.EnderecoDTO;
 import com.moroni.usuario.business.dto.TelefoneDTO;
 import com.moroni.usuario.business.dto.UsuarioDTO;
-import com.moroni.usuario.infrastructure.entity.Usuario;
 import com.moroni.usuario.infrastructure.security.JwtUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -65,4 +64,15 @@ public class UsuarioController {
                                                         @RequestParam("id") Long id){
         return ResponseEntity.ok(usuarioService.atualizaTelefone(id, dto));
     }
+    @PostMapping("/endereco")
+    public ResponseEntity<EnderecoDTO> cadastraEndereco(@RequestBody EnderecoDTO dto,
+                                                        @RequestHeader("Authorization") String token ){
+        return ResponseEntity.ok(usuarioService.cadastroEndereco(token, dto));
+    }
+
+    @PostMapping("/telefone")
+    public ResponseEntity<TelefoneDTO> cadastraTelefone(@RequestBody TelefoneDTO dto,
+                                                        @RequestHeader("Authorization") String token ){
+        return ResponseEntity.ok(usuarioService.cadastroTelefone(token, dto));
+}
 }
