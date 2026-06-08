@@ -1,6 +1,6 @@
 package com.moroni.usuario.business.dto;
 
-import lombok.*;
+import  lombok.*;
 
 import java.util.List;
 
